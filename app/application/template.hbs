@@ -1,3 +1,22 @@
-<h2 id="title">Welcome to Ember</h2>
+<!-- app/application/template.hbs -->
+
+<header>
+  <div class="page-container">
+
+    <div class="logo"></div>
+
+    <nav>
+      {{#link-to "home"}}Home{{/link-to}}
+
+      {{#link-to "user"}}
+        <img class="avatar" src="/images/avatar.jpg" />
+        matt
+      {{/link-to}}
+
+      <button class="chirp">Chirp</button>
+    </nav>
+
+  </div>
+</header>
 
 {{outlet}}
